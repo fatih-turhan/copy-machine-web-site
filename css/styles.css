@@ -848,3 +848,68 @@ Products
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+/* 
+=========
+Blog
+=========
+*/
+.blogs {
+  background-color: var(--clr-grey-10);
+}
+.blogs .section-title h2 {
+  text-align: center;
+}
+.blogs .section-title .underline {
+  margin-left: auto;
+}
+.blog {
+  background-color: var(--clr-white);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+.blog:hover {
+  transform: scale(1.02);
+}
+.blog-img-cont img {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.blog-info {
+  padding: 2rem 1.75rem;
+}
+.blog-info h3 {
+  font-size: 1.75rem;
+  color: black;
+}
+.blog-info p {
+  font-size: 1rem;
+}
+.blog:nth-child(2) {
+  color: red;
+  background-color: blue;
+}
+@media screen and (min-width: 768px) {
+  .blog {
+    max-width: none;
+  }
+  .blog-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .blog {
+    max-width: none;
+    margin-bottom: 0;
+  }
+  .blog-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5rem;
+  }
+}
