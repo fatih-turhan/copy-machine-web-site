@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css" />
     <!-- styles css -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- j-query -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
   </head>
   <body>
     <!-- navbar -->
@@ -19,7 +26,12 @@
         <!-- nav-header -->
         <div class="nav-header">
           <!-- logo -->
-          <h1>logo</h1>
+          <a class="logo-white" href="">
+            <img src="./logo_white-removebg-preview.png" alt="" />
+          </a>
+          <a class="logo-dark" href="">
+            <img src="./log_fin-removebg-preview.png" alt="" />
+          </a>
           <!-- toggle-button -->
           <button class="nav-toggle">
             <i class="fas fa-bars"></i>
@@ -40,9 +52,7 @@
         </div>
         <!-- end of nav-links -->
         <!-- call-btn -->
-        <a class="nav-call-btn btn" href="">
-          <i class="fas fa-phone"></i> 0212 475 57 57</a
-        >
+        <a class="nav-call-btn btn" href=""> iletişim</a>
       </div>
     </nav>
     <!-- end of navbar -->
@@ -59,35 +69,17 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta repellat quia
             cum non quaerat cumque hic rerum, dolorem eligendi? Autem?
           </p>
-          <!-- banner-animation -->
-          <a href="#">
-            <div class="animation-container">
-              <div class="animation-value"></div>
-            </div>
-          </a>
-          <!-- banner-buttons-container -->
           <div class="banner-buttons-container">
-            <a class="btn" href="">hakkımızda</a>
-            <a class="btn banner-btn-two" href="">projeler</a>
+            <a class="btn" href=""><i class="fas fa-phone"></i> 0212 475 75 49</a>
+            <a class="btn banner-btn-two" href=""
+              ><i class="fas fa-envelope"></i> gmail@gmail.com</a
+            >
           </div>
-        </div>
-        <!-- banner-shape -->
-        <div class="custom-shape-divider-bottom-1652190241">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
-            ></path>
-          </svg>
         </div>
       </div>
     </header>
     <!-- end of banner -->
+
     <!-- about -->
     <section class="section about">
       <div class="section-center about-center">
@@ -147,25 +139,25 @@
       <div class="section-center countings-center">
         <!-- single-counting -->
         <article class="counting">
-          <h2>15+</h2>
+          <h2>15<span>+</span></h2>
           <p>yıllık tecrübe</p>
         </article>
         <!-- end of single-counting -->
         <!-- single-counting -->
         <article class="counting">
-          <h2>1500+</h2>
+          <h2>1500<span>+</span></h2>
           <p>hazır ürün</p>
         </article>
         <!-- end of single-counting -->
         <!-- single-counting -->
         <article class="counting">
-          <h2>10.000+</h2>
+          <h2>10.000<span>+</span></h2>
           <p>memnun müşteri</p>
         </article>
         <!-- end of single-counting -->
         <!-- single-counting -->
         <article class="counting">
-          <h2>1200+</h2>
+          <h2>1200<span>+</span></h2>
           <p>ürüne bakım yapıldı</p>
         </article>
         <!-- end of single-counting -->
@@ -396,8 +388,42 @@
     </section>
     <!-- end of products -->
 
-    <!-- brands -->
-    <!-- end of brands -->
+    <!-- references -->
+    <section class="section references">
+      <div class="section-center">
+        <!-- section-title -->
+        <div class="section-title">
+          <h3>hızlı teslimat</h3>
+          <h2>sizi hemen arayalım</h2>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat
+            fuga quis architecto incidunt voluptate.
+          </p>
+        </div>
+        <!-- end of section-title -->
+        <!-- carousel-center -->
+        <div class="carousel-center owl-carousel">
+          <!-- carousel-img -->
+          <article class="card">
+            <img class="img" src="./pexels-pixabay-416405 (1).jpg" alt="" />
+          </article>
+          <!-- end of img -->
+          <!-- carousel-img -->
+          <article class="card">
+            <img class="img" src="./pexels-pixabay-416405 (1).jpg" alt="" />
+          </article>
+          <!-- end of img -->
+          <!-- carousel-img -->
+          <article class="card">
+            <img class="img" src="./pexels-pixabay-416405 (1).jpg" alt="" />
+          </article>
+          <!-- end of img -->
+        </div>
+        <!-- end of carousel-center -->
+      </div>
+    </section>
+    <!-- end of references -->
 
     <!-- blog -->
     <section class="section blogs">
@@ -414,75 +440,133 @@
           <a href="">
             <article class="blog">
               <!-- blog-img-cont -->
-            <div class="blog-img-cont">
-              <img class="img" src="./pexels-pixabay-416405 (1).jpg" alt="" />
-            </div>
-            <!-- blog-info -->
-            <div class="blog-info">
-              <!-- blog-title -->
-              <h3>kartuş nasıl doldurulur</h3>
-              <!-- blog-text -->
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, enim ipsum
-                unde illum dolorem tempore corporis consequuntur dignissimos nemo cupiditate
-                aut, inventore, animi deleniti. Facere!...
-              </p>
-            </div>
-            <!-- blog-info -->
-          </article>
-        </a>
-        <!-- end of single-blog -->
+              <div class="blog-img-cont">
+                <img class="img" src="./pexels-pixabay-416405 (1).jpg" alt="" />
+              </div>
+              <!-- blog-info -->
+              <div class="blog-info">
+                <!-- blog-title -->
+                <h3>kartuş nasıl doldurulur</h3>
+                <!-- blog-text -->
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, enim
+                  ipsum unde illum dolorem tempore corporis consequuntur dignissimos nemo
+                  cupiditate aut, inventore, animi deleniti. Facere!...
+                </p>
+              </div>
+              <!-- blog-info -->
+            </article>
+          </a>
+          <!-- end of single-blog -->
           <!-- single-blog -->
           <a href="">
             <article class="blog">
               <!-- blog-img-cont -->
-            <div class="blog-img-cont">
-              <img class="img" src="./pexels-pixabay-416405 (1).jpg" alt="" />
-            </div>
-            <!-- blog-info -->
-            <div class="blog-info">
-              <!-- blog-title -->
-              <h3>kartuş nasıl doldurulur</h3>
-              <!-- blog-text -->
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, enim ipsum
-                unde illum dolorem tempore corporis consequuntur dignissimos nemo cupiditate
-                aut, inventore, animi deleniti. Facere!...
-              </p>
-            </div>
-            <!-- blog-info -->
-          </article>
-        </a>
-        <!-- end of single-blog -->
+              <div class="blog-img-cont">
+                <img class="img" src="./pexels-pixabay-416405 (1).jpg" alt="" />
+              </div>
+              <!-- blog-info -->
+              <div class="blog-info">
+                <!-- blog-title -->
+                <h3>kartuş nasıl doldurulur</h3>
+                <!-- blog-text -->
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, enim
+                  ipsum unde illum dolorem tempore corporis consequuntur dignissimos nemo
+                  cupiditate aut, inventore, animi deleniti. Facere!...
+                </p>
+              </div>
+              <!-- blog-info -->
+            </article>
+          </a>
+          <!-- end of single-blog -->
           <!-- single-blog -->
           <a href="">
             <article class="blog">
               <!-- blog-img-cont -->
-            <div class="blog-img-cont">
-              <img class="img" src="./pexels-pixabay-416405 (1).jpg" alt="" />
-            </div>
-            <!-- blog-info -->
-            <div class="blog-info">
-              <!-- blog-title -->
-              <h3>kartuş nasıl doldurulur</h3>
-              <!-- blog-text -->
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, enim ipsum
-                unde illum dolorem tempore corporis consequuntur dignissimos nemo cupiditate
-                aut, inventore, animi deleniti. Facere!...
-              </p>
-            </div>
-            <!-- blog-info -->
-          </article>
-        </a>
-        <!-- end of single-blog -->
+              <div class="blog-img-cont">
+                <img class="img" src="./pexels-pixabay-416405 (1).jpg" alt="" />
+              </div>
+              <!-- blog-info -->
+              <div class="blog-info">
+                <!-- blog-title -->
+                <h3>kartuş nasıl doldurulur</h3>
+                <!-- blog-text -->
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, enim
+                  ipsum unde illum dolorem tempore corporis consequuntur dignissimos nemo
+                  cupiditate aut, inventore, animi deleniti. Facere!...
+                </p>
+              </div>
+              <!-- blog-info -->
+            </article>
+          </a>
+          <!-- end of single-blog -->
         </div>
         <!-- end of blog-center -->
-      </section>
-      <!-- end of blog -->
       </div>
+    </section>
+    <!-- end of blog -->
+
+    <!-- form -->
+    <section class="section forms">
+      <div class="section-center">
+        <!-- section-title -->
+        <div class="section-title">
+          <h3>hızlı teslimat</h3>
+          <h2>sizi hemen arayalım</h2>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat
+            fuga quis architecto incidunt voluptate.
+          </p>
+        </div>
+        <!-- end of section-title -->
+        <!-- form-center -->
+        <div class="forms-center">
+          <!-- form -->
+          <form class="form">
+            <div class="form-grid">
+              <label for="name">İsim</label>
+              <input class="form-control" type="text" id="name" />
+              <label for="phone">Telefon</label>
+              <input class="form-control" type="text" id="phone" />
+              <button class="btn form-btn" type="submit">gönder</button>
+            </div>
+          </form>
+          <!-- end of form -->
+        </div>
+        <!-- end of products-center -->
+      </div>
+    </section>
+    <!-- end of form -->
 
     <!-- js -->
     <script src="./js/app.js"></script>
+    <!-- carousel -->
+    <script>
+      $(".carousel-center").owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        // autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          768: {
+            items: 2,
+            nav: false,
+          },
+          992: {
+            items: 3,
+            nav: false,
+          },
+        },
+      });
+    </script>
+    <!-- jquery -->
   </body>
 </html>
