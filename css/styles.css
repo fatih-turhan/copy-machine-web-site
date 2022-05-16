@@ -423,7 +423,7 @@ Banner
   position: relative;
   min-height: calc(100vh - 6.5rem);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
-    url("../pexels-pixabay-416405\ \(1\).jpg") center/cover no-repeat fixed;
+    url("../images/banner-img.jpg") center/cover no-repeat fixed;
   animation: backani 10s infinite;
   display: grid;
   place-items: center;
@@ -506,7 +506,7 @@ Banner
 @media screen and (min-width: 768px) {
   .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-      url("../pexels-pixabay-416405\ \(1\).jpg") center/cover no-repeat fixed;
+      url("../images/banner-img.jpg") center/cover no-repeat fixed;
     animation: none;
   }
   .banner-title {
@@ -621,10 +621,6 @@ About
 Countings
 ==========
 */
-.countings {
-  border-top: 0.1rem solid var(--clr-secondry-1);
-  border-bottom: 0.1rem solid var(--clr-secondry-1);
-}
 .counting {
   text-align: center;
   padding: 2rem 1rem;
@@ -637,9 +633,9 @@ Countings
   font-size: 3.5rem;
   margin-bottom: 0.5rem;
 }
-.counting h2 span {
-  /* color: var(--clr-secondry-5); */
-}
+/* .counting h2 span {
+  color: var(--clr-secondry-5);
+} */
 .counting p {
   font-size: 1.1rem;
   text-transform: capitalize;
@@ -730,27 +726,14 @@ Services
 Products
 =========
 */
-.products {
-  background-color: var(--clr-black);
-}
-.products-section-title h3 {
-  color: var(--clr-secondry-8);
-}
-.products-section-title h2 {
-  color: var(--clr-white);
-}
-.products-section-title .underline {
-  background-color: var(--clr-white);
-}
-.products .section-title p {
-  color: var(--clr-white);
+.section-title-two p {
   max-width: 45rem;
 }
 @media screen and (min-width: 768px) {
-  .products-section-title h2 {
+  .section-title-two h2 {
     max-width: 25rem;
   }
-  .products .section-title {
+  .section-title-two {
     display: grid;
     align-items: center;
     grid-template-columns: calc(35% - 1rem) calc(75% - 1rem);
@@ -761,7 +744,7 @@ Products
 .product {
   text-align: center;
   border-radius: var(--radius);
-  background-color: var(--clr-grey-4);
+  background-color: var(--clr-grey-8);
   max-width: 25rem;
   margin: 0 auto;
   box-shadow: var(--shadow-2);
@@ -786,7 +769,7 @@ Products
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #505050;
+  color: var(--clr-grey-2);
   width: 3.75rem;
   height: 3.75rem;
   background-color: var(--clr-white);
@@ -807,19 +790,17 @@ Products
   padding: 2rem 0;
 }
 .product h3 {
-  color: var(--clr-white);
+  color: var(--clr-black);
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
 }
 .product p {
   font-size: 1rem;
-  color: var(--clr-grey-8);
   margin-bottom: 0;
 }
 .products-btn {
   display: block;
   text-align: center;
-  /* width: 100%; */
 }
 @media screen and (min-width: 768px) {
   .product {
@@ -864,7 +845,7 @@ Carousel
 .owl-dots {
   display: none;
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .references .section-title {
     text-align: center;
   }
@@ -873,7 +854,7 @@ Carousel
     margin-left: auto;
     margin-left: auto;
   }
-}
+} */
 
 /* 
 =========
@@ -947,6 +928,7 @@ Blog
   .blog-center {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
     column-gap: 2.5rem;
   }
 }
@@ -960,7 +942,7 @@ Forms
   background-color: var(--clr-primary-5-light);
   padding: 4rem 0;
   background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
-    url("../pexels-pixabay-416405\ \(1\).jpg") center/cover;
+    url("../images/banner-img.jpg") center/cover;
 }
 .forms .section-title {
   color: var(--clr-white);
@@ -1128,4 +1110,14 @@ ABOUT PAGE
     left: -1rem;
     border-radius: var(--radius);
   }
+}
+
+/* 
+============
+SERVICES PAGE
+============
+*/
+/* s-p */
+.s-p-services-layout-grey {
+  background-color: var(--clr-grey-9);
 }
